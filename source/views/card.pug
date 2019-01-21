@@ -1,0 +1,15 @@
+extends template
+
+block contents
+	.main
+		.wrapper
+			.card
+				h1= cards.name
+				h2= cards.money
+				p= cards.date
+				hr
+				a(href='/board') Back
+				br
+				a(href='/board/edit/'+cards._id) Edit
+				br
+				a(href='/board/delete/'+cards._id) Delete

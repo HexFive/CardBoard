@@ -1,0 +1,25 @@
+extends template
+
+block contents
+	h1= title
+	.container
+		form(method='POST', action='/board/add')
+			.row
+				.col-25
+					label Name:
+				.col-75
+					input(name='name', type='text', required='')
+			.row
+				.col-25
+					label Money:
+				.col-75
+					input(name='money', type='number', required='')
+			.row
+				.col-25
+					label Date:
+				.col-75
+					input(name='date', type='date', required='')
+			br
+			.row
+				input(type='submit', value='Submit')
+				a(href='/board') Back

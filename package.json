@@ -1,0 +1,25 @@
+{
+  "name": "CardBoardS",
+  "version": "0.0.1",
+  "description": "Test CardBoard",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HexFive/CardBoard.git"
+  },
+  "keywords": [
+    "hex"
+  ],
+  "author": "hexfive",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nedb": "^1.8.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {}
+}

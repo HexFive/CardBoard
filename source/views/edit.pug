@@ -1,0 +1,25 @@
+extends template
+
+block contents
+	h1= title
+	.container
+		form(method='POST', action='/board/edit/'+cards._id)
+			.row
+				.col-25
+					label Name:
+				.col-75
+					input(name='name', type='text' value=cards.name, required='')
+			.row
+				.col-25
+					label Money:
+				.col-75
+					input(name='money', type='number' value=cards.money, required='')
+			.row
+				.col-25
+					label Date:
+				.col-75
+					input(name='date', type='date' value=cards.date, required='')
+			br
+			.row
+				input(type='submit', value='Submit')
+				a(href='/board/'+cards._id) Back

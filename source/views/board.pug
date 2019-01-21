@@ -1,0 +1,22 @@
+extends template
+
+block contents
+		h1 #{title}
+		.main
+			.wrapper
+				#create.card
+					a(href='/board/add') +
+			each article, i in cards
+				.wrapper
+					.card(id=article._id)
+						table
+							tr
+								td Name:
+								td
+									a(href='/board/'+article._id)=article.name
+							tr
+								td Money:
+								td=article.money
+							tr
+								td Date:
+								td=article.date
